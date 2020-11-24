@@ -1,0 +1,17 @@
+<h1>編輯會員</h1>
+
+<!-- # 預設會找post users_path路徑 -->
+<%= form_for(current_user, url: users_path, method: 'put') do |form| %>
+    <div class="field">
+        <%= form.label :email %>
+        <%= current_user.email :email %>
+    </div>
+    
+    <div class="field">
+        <%= form.label :nickname %>
+        <%= form.text_field :nickname %>
+    </div>
+
+    <%= form.submit '註冊' %>
+
+<% end %>

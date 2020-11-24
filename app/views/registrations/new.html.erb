@@ -1,0 +1,26 @@
+<h1>註冊會員</h1>
+
+<!-- # 預設會找post users_path路徑 -->
+<%= form_for(@user, url: '/users', method: 'post') do |form| %>
+    <div class="field">
+        <%= form.label :email %>
+        <%= form.text_field :email %>
+    </div>
+
+    <div class="field">
+        <%= form.label :password %>
+        <%= form.password_field :password %>
+    </div>
+    <div class="field">
+        <%= form.label :password_confirmation %>
+        <%= form.password_field :password_confirmation %>
+    </div>
+    
+    <div class="field">
+        <%= form.label :nickname %>
+        <%= form.text_field :nickname %>
+    </div>
+
+    <%= form.submit '註冊' %>
+
+<% end %>

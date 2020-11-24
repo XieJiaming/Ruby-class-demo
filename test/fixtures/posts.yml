@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  titielrails: MyString
+  g: MyString
+  model: MyString
+  Post: MyString
+  title: MyString
+  content: MyText
+  board: one
+  user: MyString
+  belongs_to: MyString
+
+two:
+  titielrails: MyString
+  g: MyString
+  model: MyString
+  Post: MyString
+  title: MyString
+  content: MyText
+  board: two
+  user: MyString
+  belongs_to: MyString
