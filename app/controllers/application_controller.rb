@@ -4,7 +4,6 @@ class ApplicationController < ActionController::Base
     before_action :session_required, only: [:edit, :update]
 
     rescue_from(ActiveRecord::RecordNotFound, {with: :record_not_found})
-
     private
     def session_required
         redirect_to sign_in_users_path, notice: '請先登入會員' if not user_sign_in?
